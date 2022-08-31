@@ -15,19 +15,32 @@
         <!--Stylesheet Here-->
         <link href="reset.css" rel="stylesheet" type="text/css"> 
         <link href="style.css" rel="stylesheet" type="text/css"> 
+        <link href="dropdown.css" rel="stylesheet" type="text/css"> 
 
 
         <header>
             <h1 href="/">Celeste Lu</h1>
-            <nav>
-                <!--Links Are Here-->
-                <ul class="nav-links">
-                    <li><a href="/">HOME</a></li>
-                    <li><a href="projects.html">PROJECTS</a></li>
-                    <li><a href="resume.html">RESUME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                </ul>
-            </nav>
+            <div class="full-nav"> 
+                <nav>
+                    <!--Links Are Here-->
+                    <ul class="nav-links">
+                        <li><a href="/">HOME</a></li>
+                        <li class="dropdown">
+                            <a class="dropbtn" href="projects.html">PROJECTS</a>
+                            <div class="dropdown-content">
+                            <a href="botanik.html">Botanik Herbs & Tea</a>
+                            <a href="fall.html">Fall Photography</a>
+                            <a href="#">Typography Posters </a>
+                            <a href="#">Bedroom Illustration</a>
+                            <a href="#">Food Zine</a>
+                            <a href="#">Concert Poster</a>
+                            </div>
+                        </li>
+                        <li><a href="resume.html">RESUME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div id="icon-bar">
                 <a href="https://fontawesome.com/"></a>
                 <!--Linkedin Link Here-->
@@ -62,16 +75,6 @@
                 keyboards and so much more! Contact me if you would like to work together. 
             </h4>
             <img src="images/profilepic.jpg" alt="profpic" width="400" class="images">
-        </section>
-
-        <section id="aboutme-pics">
-            <div class="container">
-                <img src="images/pic1.JPG" alt="pic1" width="50%" class="item">
-                <img src="images/pic2.JPG" alt="pic2" width="50%" class="item">
-                <img src="images/pic3.JPG" alt="pic3" width="50%" class="item">
-                <img src="images/pic4.JPG" alt="pic4" width="50%" class="item">
-                <img src="images/pic5.JPG" alt="pic5" width="50%" class="item">
-             </div>
         </section>
     </body>
 
