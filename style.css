@@ -1,0 +1,247 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Home Page CSS Here */
+
+h1{ 
+    font-family: ltc-bodoni-175, serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer; 
+    margin-right: auto; 
+}
+
+li, a {
+    font-family: basic-sans, sans-serif;
+    font-weight: 200; 
+    font-style: normal;
+    letter-spacing: 0.05em;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color:black;
+    padding-right: 8px; 
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%; 
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 3vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    pointer-events: auto;
+}
+
+#icon-bar {
+    display:block;
+    overflow: hidden;
+    float: right; 
+    text-align: right;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #icon-bar i {
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+    margin-right: 15px;
+  }
+
+.full-nav {
+    display: inline-block;
+}
+
+.nav-links { 
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links a {
+    text-decoration-line: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration-color 0.5s ease-out;
+}
+
+.nav-links a:hover {
+   text-decoration-color: black;
+}
+
+#header {
+    text-align: center;
+}
+
+#design {
+    padding-top: 65px;
+    margin-top: 0;
+    font-family: basic-sans, sans-serif;
+    font-weight: 200;   
+    font-style: normal;     
+    letter-spacing: 0.1em;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 1rem 0;
+}
+
+h2 {
+    font-family:ltc-bodoni-175;
+    font-weight: 500;
+    font-size: calc((2.8 - 1) * 1.2vw + 1rem);
+    line-height: calc(1.4 * (1 + (1 - 2.8)/25));
+    font-style: normal;
+    letter-spacing: 0em;
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 2rem 0;
+    display: grid;
+}
+
+#projects.marquee {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.proj {
+    font-family: ltc-bodoni-175;
+    font-size: 135px; 
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0em;
+    text-transform: none;
+    padding-bottom: 50px;
+    width: 50vw;
+    animation: scrolling 10s linear infinite;
+}
+
+#marquee {
+    display: flex; 
+    width: 200vw; 
+    overflow-x: hidden; 
+    justify-content: space-evenly;
+}
+
+@keyframes scrolling {
+    0% { transform: translateX(0); }
+    100% { transform: translatex(-100vw); }
+  }
+
+h3{ 
+    font-family: basic-sans, sans-serif;    
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 0em;
+    text-transform: none;
+    line-height: 1.8;
+    text-align: left;
+    size: 1.1rem; 
+    margin-top: 178px;
+}
+
+#button {
+    width: 200px;
+    cursor: pointer;
+    display: block; 
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+#button:hover {
+    color: white; 
+    background-color: black;
+    box-shadow: inset 0 -3.25em 0 0 black;
+}
+
+#section2 {
+    display: flex; 
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+}
+
+#footer {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+/* Project Subpage CSS Here */
+
+#proj.sect {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding-bottom: 250px;
+}
+
+h4 {
+    font-family: basic-sans, sans-serif;    
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 0em;
+    text-transform: none;
+    line-height: 1.8;
+    text-align: left;
+    size: 1.1rem; 
+    margin-top: 120px;
+}
+
+
+
+#section-intern {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+#botan {
+    font-family:ltc-bodoni-175;
+    font-weight: 500;
+    font-size: calc((2.8 - 1) * 1.2vw + 1rem);
+    line-height: calc(1.4 * (1 + (1 - 2.8)/25));
+    font-style: normal;
+}
+
+#botanweb {
+    padding-bottom: 20px;
+}
+
+.container {
+    display: flex; 
+    flex-wrap: wrap; 
+    padding: 5;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+}
+
+.item {
+    margin: 30px; 
+}
+
+#myPDF {
+    width: 85%;
+    height: 975px;
+}
+
+#aboutme-page {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+
