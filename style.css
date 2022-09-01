@@ -245,3 +245,16 @@ h4 {
 }
 
 
+#fall-photos {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+#fall {
+    font-family:ltc-bodoni-175;
+    font-size: calc((2.8 - 1) * 1.2vw + 1rem);
+    line-height: calc(1.4 * (1 + (1 - 2.8)/25));
+    font-style: normal;
+}
